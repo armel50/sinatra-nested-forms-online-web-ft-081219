@@ -18,6 +18,8 @@ module FormsLab
         @ships = params["pirate"]["ships"].each do |ship|
           new_ship = Ship.new(name: ship["name"] ,type: ship["type"] , booty:["booty"] )
         end
+        
+        @register_ship = Ship.all
         erb :"pirates/show"
       end
 
