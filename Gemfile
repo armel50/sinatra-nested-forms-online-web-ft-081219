@@ -10,5 +10,5 @@ gem 'require_all'
 group :test do
   gem 'rspec'
   gem 'rack-test'
-  gem 'capybara'
+  gem 'capybara', '>= 3.14.0'
 end
